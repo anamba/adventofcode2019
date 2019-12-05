@@ -16,3 +16,4 @@ I'm trying [Elixir](https://elixir-lang.org/) this year ([last year](https://git
 
 * Was afraid my regex with backreferences might be slow, but the strings involved are so short it didn't matter.
 * Forgot about the `:discard` option on `chunk_every`. Ack.
+* Also forgot about `chunk_by(& &1)`/`group_by(& &1)`, even better.

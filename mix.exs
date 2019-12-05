@@ -21,6 +21,7 @@ defmodule Aoc.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:flow, "~> 0.14"},
       {:mix_test_watch, "~> 1.0", only: :dev, runtime: false}
     ]
   end
