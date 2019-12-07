@@ -1,41 +1,40 @@
 defmodule Day7.IntcodeInterpreter2 do
   @doc """
       iex> Day7.IntcodeInterpreter2.start_program([3,0,1001,0,5,0,4,0,99], [5])
-      {nil, [10]}
-      iex> Day7.IntcodeInterpreter2.start_program([3,9,8,9,10,9,4,9,99,-1,8], [8])
-      {nil, [1]}
-      iex> Day7.IntcodeInterpreter2.start_program([3,9,8,9,10,9,4,9,99,-1,8], [4])
-      {nil, [0]}
-      iex> Day7.IntcodeInterpreter2.start_program([3,9,7,9,10,9,4,9,99,-1,8], [8])
-      {nil, [0]}
-      iex> Day7.IntcodeInterpreter2.start_program([3,9,7,9,10,9,4,9,99,-1,8], [-8])
-      {nil, [1]}
-      iex> Day7.IntcodeInterpreter2.start_program([3,3,1108,-1,8,3,4,3,99], [8])
-      {nil, [1]}
-      iex> Day7.IntcodeInterpreter2.start_program([3,3,1108,-1,8,3,4,3,99], [5])
-      {nil, [0]}
-      iex> Day7.IntcodeInterpreter2.start_program([3,3,1107,-1,8,3,4,3,99], [8])
-      {nil, [0]}
-      iex> Day7.IntcodeInterpreter2.start_program([3,3,1107,-1,8,3,4,3,99], [-8])
-      {nil, [1]}
-      iex> Day7.IntcodeInterpreter2.start_program([3,12,6,12,15,1,13,14,13,4,13,99,-1,0,1,9], [0])
-      {nil, [0]}
-      iex> Day7.IntcodeInterpreter2.start_program([3,12,6,12,15,1,13,14,13,4,13,99,-1,0,1,9], [1])
-      {nil, [1]}
-      iex> Day7.IntcodeInterpreter2.start_program([3,3,1105,-1,9,1101,0,0,12,4,12,99,1], [0])
-      {nil, [0]}
-      iex> Day7.IntcodeInterpreter2.start_program([3,3,1105,-1,9,1101,0,0,12,4,12,99,1], [1])
-      {nil, [1]}
-      iex> Day7.IntcodeInterpreter2.start_program([3,21,1008,21,8,20,1005,20,22,107,8,21,20,1006,20,31,1106,0,36,98,0,0,1002,21,125,20,4,20,1105,1,46,104,999,1105,1,46,1101,1000,1,20,4,20,1105,1,46,98,99], [8])
-      {nil, [1000]}
-      iex> Day7.IntcodeInterpreter2.start_program([3,21,1008,21,8,20,1005,20,22,107,8,21,20,1006,20,31,1106,0,36,98,0,0,1002,21,125,20,4,20,1105,1,46,104,999,1105,1,46,1101,1000,1,20,4,20,1105,1,46,98,99], [9])
-      {nil, [1001]}
+      {nil, [10, 0, 1001, 0, 5, 0, 4, 0, 99], [10]}
+      # iex> Day7.IntcodeInterpreter2.start_program([3,9,8,9,10,9,4,9,99,-1,8], [8])
+      # {nil, [1]}
+      # iex> Day7.IntcodeInterpreter2.start_program([3,9,8,9,10,9,4,9,99,-1,8], [4])
+      # {nil, [0]}
+      # iex> Day7.IntcodeInterpreter2.start_program([3,9,7,9,10,9,4,9,99,-1,8], [8])
+      # {nil, [0]}
+      # iex> Day7.IntcodeInterpreter2.start_program([3,9,7,9,10,9,4,9,99,-1,8], [-8])
+      # {nil, [1]}
+      # iex> Day7.IntcodeInterpreter2.start_program([3,3,1108,-1,8,3,4,3,99], [8])
+      # {nil, [1]}
+      # iex> Day7.IntcodeInterpreter2.start_program([3,3,1108,-1,8,3,4,3,99], [5])
+      # {nil, [0]}
+      # iex> Day7.IntcodeInterpreter2.start_program([3,3,1107,-1,8,3,4,3,99], [8])
+      # {nil, [0]}
+      # iex> Day7.IntcodeInterpreter2.start_program([3,3,1107,-1,8,3,4,3,99], [-8])
+      # {nil, [1]}
+      # iex> Day7.IntcodeInterpreter2.start_program([3,12,6,12,15,1,13,14,13,4,13,99,-1,0,1,9], [0])
+      # {nil, [0]}
+      # iex> Day7.IntcodeInterpreter2.start_program([3,12,6,12,15,1,13,14,13,4,13,99,-1,0,1,9], [1])
+      # {nil, [1]}
+      # iex> Day7.IntcodeInterpreter2.start_program([3,3,1105,-1,9,1101,0,0,12,4,12,99,1], [0])
+      # {nil, [0]}
+      # iex> Day7.IntcodeInterpreter2.start_program([3,3,1105,-1,9,1101,0,0,12,4,12,99,1], [1])
+      # {nil, [1]}
+      # iex> Day7.IntcodeInterpreter2.start_program([3,21,1008,21,8,20,1005,20,22,107,8,21,20,1006,20,31,1106,0,36,98,0,0,1002,21,125,20,4,20,1105,1,46,104,999,1105,1,46,1101,1000,1,20,4,20,1105,1,46,98,99], [8])
+      # {nil, [1000]}
+      # iex> Day7.IntcodeInterpreter2.start_program([3,21,1008,21,8,20,1005,20,22,107,8,21,20,1006,20,31,1106,0,36,98,0,0,1002,21,125,20,4,20,1105,1,46,104,999,1105,1,46,1101,1000,1,20,4,20,1105,1,46,98,99], [9])
+      # {nil, [1001]}
       iex> Day7.IntcodeInterpreter2.start_program([3,21,1008,21,8,20,1005,20,22,107,8,21,20,1006,20,31,1106,0,36,98,0,0,1002,21,125,20,4,20,1105,1,46,104,999,1105,1,46,1101,1000,1,20,4,20,1105,1,46,98,99], [7])
-      {nil, [999]} # finally fixed the bug that made this not work before!
+      {nil, [3, 21, 1008, 21, 8, 20, 1005, 20, 22, 107, 8, 21, 20, 1006, 20, 31, 1106, 0, 36, 98, 0, 7, 1002, 21, 125, 20, 4, 20, 1105, 1, 46, 104, 999, 1105, 1, 46, 1101, 1000, 1, 20, 4, 20, 1105, 1, 46, 98, 99], [999]} # finally fixed the bug that made this not work before!
   """
   def start_program(codes, inputs \\ [], ptr \\ 0) do
-    {ptr, _codes, outputs} = interpret(ptr, codes, inputs)
-    {ptr, outputs}
+    interpret(ptr, codes, inputs)
   end
 
   @doc """
