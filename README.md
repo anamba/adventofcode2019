@@ -21,3 +21,7 @@ I'm trying [Elixir](https://elixir-lang.org/) this year ([last year](https://git
 ## Day 6
 
 * Knowing about `:digraph` would have made this a lot easier.
+
+## Day 7
+
+* Briefly considered going all in on processes and messages and all that, but ended up just making the fewest changes possible.
