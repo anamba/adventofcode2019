@@ -25,3 +25,4 @@ I'm trying [Elixir](https://elixir-lang.org/) this year ([last year](https://git
 ## Day 7
 
 * Briefly considered going all in on processes and messages and all that, but ended up just making the fewest changes possible.
+* Revised the following day to use processes, which turned out to require even fewer changes than avoiding processes! Ha.
