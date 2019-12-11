@@ -26,3 +26,7 @@ I'm trying [Elixir](https://elixir-lang.org/) this year ([last year](https://git
 
 * Briefly considered going all in on processes and messages and all that, but ended up just making the fewest changes possible.
 * Revised the following day to use processes, which turned out to require even fewer changes than avoiding processes! Ha.
+
+## Day 11
+
+* My program doesn't actually halt, but does give the right answer. Didn't have time to figure that out.
