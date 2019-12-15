@@ -30,3 +30,7 @@ I'm trying [Elixir](https://elixir-lang.org/) this year ([last year](https://git
 ## Day 11
 
 * My program doesn't actually halt, but does give the right answer. Didn't have time to figure that out.
+
+## Day 14
+
+* Started to write something for Part 2, but ended up doing it manually.
