@@ -34,3 +34,7 @@ I'm trying [Elixir](https://elixir-lang.org/) this year ([last year](https://git
 ## Day 14
 
 * Started to write something for Part 2, but ended up doing it manually.
+
+## Day 15
+
+* Did this one while watching TV. Turned in best rank yet. New strategy?

@@ -1,0 +1,6 @@
+defmodule Day14Test do
+  use ExUnit.Case
+
+  doctest Day15.RepairDroid
+  doctest Day15.RepairDroid2
+end
