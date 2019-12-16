@@ -38,3 +38,7 @@ I'm trying [Elixir](https://elixir-lang.org/) this year ([last year](https://git
 ## Day 15
 
 * Did this one while watching TV. Turned in best rank yet. New strategy?
+
+## Day 16
+
+* Finished Part 1, but couldn't get Part 2. I basically failed linear algebra in college, but was saved by a pilot math program that averaged that grade out with a subject I grasped a little better. But that means I never did learn linear algebra.

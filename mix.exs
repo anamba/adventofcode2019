@@ -22,6 +22,7 @@ defmodule Aoc.MixProject do
   defp deps do
     [
       {:flow, "~> 0.14"},
+      {:matrix, "~> 0.3"},
       {:mix_test_watch, "~> 1.0", only: :dev, runtime: false}
     ]
   end
