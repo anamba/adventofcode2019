@@ -42,3 +42,7 @@ I'm trying [Elixir](https://elixir-lang.org/) this year ([last year](https://git
 ## Day 16
 
 * Finished Part 1, but couldn't get Part 2. I basically failed linear algebra in college, but was saved by a pilot math program that averaged that grade out with a subject I grasped a little better. But that means I never did learn linear algebra.
+
+## Day 17
+
+* Part 1 was very straightforward, but solved part 2 by hand. Kinda fun at first, but became tedious.
