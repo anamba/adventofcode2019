@@ -47,3 +47,11 @@ I'm trying [Elixir](https://elixir-lang.org/) this year ([last year](https://git
 ## Day 17
 
 * Part 1 was very straightforward, but solved part 2 by hand. Kinda fun at first, but became tedious.
+
+## Day 18
+
+* Another BFS problem, I reeeeally need to learn this someday. They kicked my ass last year, too.
+
+## Day 20
+
+* Pretty sure I know what needs to be done here (BFS again, my nemesis), but... meh

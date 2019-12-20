@@ -32,7 +32,7 @@ defmodule Day17.ASCII2 do
     inputs =
       inputs
       |> Enum.map_join(&Kernel.<>(&1, "\n"))
-      |> String.to_char_list()
+      |> String.to_charlist()
 
     spawn(Day11.IntcodeInterpreter, :start_program, [program, inputs, self()])
   end
