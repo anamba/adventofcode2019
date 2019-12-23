@@ -55,3 +55,11 @@ I'm trying [Elixir](https://elixir-lang.org/) this year ([last year](https://git
 ## Day 20
 
 * Pretty sure I know what needs to be done here (BFS again, my nemesis), but... meh
+
+## Day 21
+
+* No coding! Just boolean logic. This was an easy one.
+
+## Day 23
+
+* Fairly easy (just got a late start).
